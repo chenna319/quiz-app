@@ -1,12 +1,23 @@
-import { QRCodeCanvas } from "qrcode.react";
 import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import QuizGame from "./components/quiz-game";
+import Home from "./components/home";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/quiz-game",
+      element: <QuizGame />,
+    },
+  ]);
   return (
-    <div className="qr-container">
-      <h1>Quiz App</h1>
-      <QRCodeCanvas value="https://localhost:3000/chenna" size={228} />
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
