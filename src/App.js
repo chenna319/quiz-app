@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="qr-container">
       <h1>Quiz App</h1>
       <QRCodeCanvas value="https://localhost:3000/chenna" size={228} />
     </div>
