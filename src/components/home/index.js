@@ -7,7 +7,10 @@ const Home = () => {
   return (
     <div className="qr-container">
       <h1>QuizGame</h1>
-      <QRCodeCanvas value="https://localhost:3000/quiz-game" size={250} />
+      <QRCodeCanvas
+        value="https://quiz-app-gamma-black-77.vercel.app/quiz-game"
+        size={250}
+      />
       <Link to="/quiz-game">
         <button type="button">Game</button>
       </Link>
