@@ -7,3 +7,12 @@
   height: 100vh;
   background-color: burlywood;
 }
+
+.qr-container button {
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
